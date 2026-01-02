@@ -3,11 +3,12 @@ import { Box, Paper, Typography } from '@mui/material'
 import PostSearch from "../../components/posts/PostSearch";
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import PostTable from "../../components/posts/PostTable";
-import PostPageNation from "../../components/posts/PostPagenation";
+import PostPagenation from "../../components/posts/PostPagenation";
 import Loader from "../../components/common/Loader";
 import ErrorMessage from "../../components/common/ErrorMessage";
 import { fetchPosts } from "../../api/postsApi";
 import { useMe } from '../../hooks/useMe';
+
 
 // useQuery({});
 
@@ -78,7 +79,7 @@ function PostList(props) {
                     <PostTable posts={content} />
 
                     {/* 페이지네이션 */}
-                    <PostPageNation
+                    <PostPagenation
                         page={page}
                         totalPages={totalPages}
                         onPrev={handlePrev}
