@@ -3,7 +3,7 @@ import { Box, Paper, Typography } from '@mui/material'
 import PostSearch from "../../components/posts/PostSearch";
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import PostTable from "../../components/posts/PostTable";
-import PostPageNation from "../../components/posts/PostPageNation";
+import PostPagenation from "../../components/posts/PostPagenation";
 import Loader from "../../components/common/Loader";
 import ErrorMessage from "../../components/common/ErrorMessage";
 import { fetchPosts } from "../../api/postsApi";
@@ -90,5 +90,6 @@ function PostList(props) {
         </Box>
     );
 }
+
 
 export default PostList;
