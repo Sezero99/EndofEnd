@@ -78,7 +78,7 @@ function PostList(props) {
                     <PostTable posts={content} />
 
                     {/* 페이지네이션 */}
-                    <PostPageNation
+                    <PostPagenation
                         page={page}
                         totalPages={totalPages}
                         onPrev={handlePrev}
@@ -93,3 +93,4 @@ function PostList(props) {
 
 
 export default PostList;
+
